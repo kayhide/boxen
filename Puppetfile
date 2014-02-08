@@ -55,3 +55,20 @@ github "xquartz",    "1.1.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+
+github "osx",        "2.2.2"
+github "wget",       "1.0.1"
+github "zsh",        "1.0.0"
+github "heroku",     "2.1.1"
+github "postgresql", "3.0.1"
+
+github "keyremap4macbook", "1.2.1"
+github "better_touch_tools", "1.0.0"
+github "alfred",     "1.1.7"
+github "iterm2",     "1.0.6"
+github "emacs",      "1.2.0"
+github "chrome",     "1.1.2"
+github "dropbox",    "1.2.0"
+github "evernote",   "2.0.5"
+github "skype",      "1.0.8"
+github "picasa",     "1.0.0"
