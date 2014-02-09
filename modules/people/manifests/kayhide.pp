@@ -30,7 +30,7 @@ class people::kayhide {
     require => Package["sanemat/font/ricty"]
   }
 
-  package {'zsh':
+  package { 'zsh':
     install_options => ['--disable-etcdir']
   }
   file_line { 'add zsh to /etc/shells':
@@ -39,8 +39,8 @@ class people::kayhide {
     require => Package['zsh'],
     before  => Osx_chsh[$::luser];
   }
-  include osx
-  osx_chsh { $::luser:
-    shell   => "${boxen::config::homebrewdir}/bin/zsh";
+  exec { 'chenge shell to zsh':
+    command => "chsh -s ${boxen::config::homebrewdir}/bin/zsh",
+    require => Package['zsh']
   }
 }
